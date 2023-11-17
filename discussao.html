@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Desigualdade - Discussão</title>
+  <link rel="stylesheet" type="text/css" href="CSS/discussaoface.css" media="screen"/>
+  <style>
+    body{
+        background-image: url("IMG/image.png");
+        background-size: auto;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>DISCUSSÃO</h1>
+      <br><br>
+      <button id="backButao" onclick="goBack()">Voltar</button>
+    </nav>
+  </header>
+
+  <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function isMobileDevice() {
+                return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+            }
+        
+            if (isMobileDevice()) {
+                var button = document.getElementById('backButao');
+                if (button) {
+                    button.style.padding = '17px'
+                    button.style.marginTop = '1180px';
+                    button.style.marginLeft = '393px';  
+                }
+                
+                var janela = document.querySelector('.janelaTexto');
+                if (janela) {
+                    janela.style.marginTop = '46px';
+                    janela.style.marginLeft = '38px';
+                    janela.style.height = '112vw';
+                }
+        
+                var MyFooter = document.querySelector('.footer');
+                if (MyFooter) {
+                    MyFooter.style.width = '106vw';
+                }
+                
+                var MyP = document.getElementById('letras');
+                if (MyP) {
+                    MyP.style.marginLeft = '20px';   
+                }
+               
+                var MyP2 = document.getElementById('letras-2');
+                if (MyP2) {
+                    MyP2.style.width = '90%';  
+                    MyP2.style.fontSize = '10px';
+                } 
+            }
+        });
+    </script>
+
+  <main>
+    <div class="janelaTexto">
+        <p id="letras-2">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            O mundo digital, com todas as suas vantagens - como a disponibilidade infinita de informações ao alcance de um clique e a comunicação imediata - não alcança a todos da mesma maneira. O acesso à internet pode marcar a diferença entre exclusão social e igualdade de oportunidades. Se não forem adotadas soluções, a disparidade entre os países mais desenvolvidos e as nações em desenvolvimento aumentará. O alerta é feito pelo Unicef em seu relatório Situação Mundial da Infância 2017: as crianças em um mundo digital.
+            <br><br>
+            Na África, 60% das pessoas entre 15 e 24 anos não têm acesso à internet; na Europa, essa porcentagem cai para 4%. Os países em que crianças e adolescentes têm menos acesso estão no continente africano. A digitalização também é limitada em áreas de conflito armado deflagrado ou recente, como Iêmen, Iraque e Afeganistão. "O mundo tecnológico se move tão rápido que, se forem adotadas as medidas necessárias para que o acesso chegue a todas as partes, provavelmente esse será um dos campos em que poderemos avançar mais rapidamente", diz Blanca Carazo, diretora do Comitê Espanhol de Programas do Unicef.
+            <br><br>
+            Promover estratégias de mercado que favoreçam a implantação de empresas de tecnologia, o apoio por parte dos provedores a entidades locais e a implantação de conexões públicas à internet são algumas das medidas propostas pelo Unicef para reduzir o desnível. "O objetivo é muito claro: não deixar ninguém para trás nessa corrida. É um mandato universal que concerne a todos: governos, empresas e universidades", aponta Carazo.
+            <br><br>
+            A organização identifica quatro benefícios derivados da implantação maciça de novas tecnologias:<br>
+            
+            •‎ ‎ Melhora na qualidade da educação.<br>
+            •‎ ‎ Possibilidade de acessar ferramentas e informações que permitam aos jovens buscar novas soluções para seus problemas.<br>
+            •‎ ‎ Nova economia com mais opções profissionais para os jovens.<br>
+            •‎ ‎ Melhor atendimento em casos de emergência.<br>
+            No continente africano, há muitos exemplos dos passos que vêm sendo dados em direção à digitalização. Um exemplo citado no relatório vem do campo de refugiados de Danamadja, no sul do Chade: na falta de uma biblioteca, as crianças utilizam seus telefones celulares para fazer os deveres. Nos últimos anos, também têm surgido incubadoras de empresas; já existem numerosas plataformas digitais que melhoram o desenvolvimento e fomentam a inovação, como a Ushahidi, e diversas tentativas de modernizar o sistema de saúde em vários países.
+            <br><br>
+            Em nível global, as pessoas com idade entre 15 e 24 anos são o grupo mais conectado. Desse grupo, 71% têm o hábito de acessar a internet, contra 48% da população total.
+            <br><br>
+            Um terço dos menores de 18 anos acessa a internet no mundo. 29% dos jovens entre 15 e 24 anos (346 milhões de pessoas) não têm acesso à internet. Esse dado se acentua no continente africano, onde 60% dos jovens não podem se conectar à internet. Na Europa, essa percentagem cai para 4%.
+            <br><br>
+            Entre 2012 e 2017, estima-se que 100 milhões de crianças tenham acessado a internet pela primeira vez.
+            <br><br>
+            Cinquenta e seis por cento dos websites do mundo estão em inglês, o que impossibilita o acesso de crianças de línguas minoritárias ou sem recursos para aprender esse segundo idioma a conteúdos relevantes para sua educação.
+            <br><br>
+            Também há desigualdade de gênero: em países como a Índia, o número de mulheres que se conectam à internet não chega nem a um terço do total de usuários.
+          </p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p id="letras"> Direitos do site reservados aos alunos da turma de 2°Novotech
+          <br>
+           Gustavo Sabatini (N12); Isabela Nunes(N14); Raphael Melo(N33); Wesley Leal(N39); William Gulias(N40);</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+          }
+        
+          if (isMobileDevice()) {
+            const p = document.getElementById("letras-2");
+        
+            if (p) {
+              let texto = p.innerHTML;
+        
+              for (let i = 0; i < 23; i++) {
+                texto = "<br>" + texto;
+              }
+        
+              p.innerHTML = texto;
+            } else {
+              console.log("Elemento com ID 'letras-2' não encontrado.");
+            }
+          } else {
+            console.log("Não é um dispositivo móvel.");
+          }
+        });
+
+    </script>
+  
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

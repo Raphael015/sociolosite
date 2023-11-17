@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Desigualdade</title>
+  <link rel="stylesheet" type="text/css" href="CSS/indexface.css" media="screen"/>
+
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url("IMG/image.png");
+        background-size: auto;
+        background-position: center;
+    }
+
+    @media (max-width: 768px) {
+        #main-container {
+            margin-top: -100px !important;
+        }
+         .footer {
+            font-size: 25px;
+            height: 200px;
+          }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <h1>DESIGUALDADE DE ACESSO À TECNOLOGIA EM PAÍSES EM DESENVOLVIMENTO</h1>
+    </nav>
+  </header>
+
+   <main id="main-container">
+       <a href="objetivos.html" class="window">Objetivos</a>
+       <a href="discussao.html" class="window">Discussão</a>
+       <a href="conclusao.html" class="window">Conclusão</a>
+   </main>
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function isMobileDevice() {
+                return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+            }
+        
+            if (isMobileDevice()) {
+                var mainContainer = document.getElementById('main-container');
+                if (mainContainer) {
+                    mainContainer.style.marginTop = '200px';
+                }
+        
+                var MyFooter = document.querySelector('.footer');
+                if (MyFooter) {
+                    MyFooter.style.height = '105px';
+                    MyFooter.style.fontSize = '24px';
+                }
+        
+                var MyHeader = document.querySelector('header');
+                if (MyHeader) {
+                    MyHeader.style.paddingTop = '40px';
+                }
+        
+                var MyH1 = document.querySelector('header h1');
+                if (MyH1) {
+                    MyH1.style.marginTop = '-17px';
+                    MyH1.style.fontSize = '30px';    
+                }
+                
+                var MyP = document.querySelector('p');
+                if (MyP) {
+                    MyP.style.marginTop = '-8px';
+                    MyP.style.marginLeft = '20px';   
+                }
+            }
+        });
+    </script>
+   
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p> Direitos do site reservados aos alunos da turma de 2°Novotech
+                <br>
+                Gustavo Sabatini (N12); Isabela Nunes(N14); Raphael Melo(N33); Wesley Leal(N39); William Gulias(N40);
+              </p>
+            </div>
+          </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Desigualdade - Objetivos</title>
+  <link rel="stylesheet" type="text/css" href="CSS/objetivosface.css" media="screen"/>
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url("IMG/image.png");
+        background-size: auto;
+        background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>OBJETIVOS</h1>
+      <br><br>
+      <button id="backButao" onclick="goBack()">Voltar</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="janelaTexto">
+        <p>
+        Estudaremos a disparidade no acesso, uso e impacto da tecnologia entre diferentes grupos sociais de países em desenvolvimento. Isso envolve examinar fatores como infraestrutura, renda, educação, gênero e localização geográfica, além de analisar como essas desigualdades afetam oportunidades, inclusão digital e desenvolvimento social.
+        </p>
+     </div>
+  </main>
+
+  <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function isMobileDevice() {
+                return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+            }
+        
+            if (isMobileDevice()) {
+                var button = document.getElementById('backButao');
+                if (button) {
+                    button.style.marginTop = '20px';
+                    button.style.marginLeft = '-20px';  
+                }
+        
+                var janela = document.querySelector('.janelaTexto');
+                if (janela) {
+                    janela.style.marginTop = '46px';
+                }
+            }
+        });
+    </script>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+  
+  <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p> Direitos do site reservados aos alunos da turma de 2°Novotech
+                <br>
+                Gustavo Sabatini (N12); Isabela Nunes(N14); Raphael Melo(N33); Wesley Leal(N39); William Gulias(N40);
+              </p>
+            </div>
+          </div>
+        </div>
+    </footer>
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function isMobileDevice() {
+                return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+            }
+        
+            if (isMobileDevice()) {
+                var MyFooter = document.querySelector('.footer');
+                if (MyFooter) {
+                    MyFooter.style.height = '105px';
+                    MyFooter.style.fontSize = '24px';
+                }
+        
+                var MyHeader = document.querySelector('header');
+                if (MyHeader) {
+                    MyHeader.style.paddingTop = '40px';
+                }
+        
+                var MyH1 = document.querySelector('header h1');
+                if (MyH1) {
+                    MyH1.style.marginTop = '-1px';
+                    MyH1.style.fontSize = '30px';    
+                }
+                
+                var MyP = document.querySelector('p');
+                if (MyP) {
+                    MyP.style.marginTop = '-8px';
+                    MyP.style.marginLeft = '20px';   
+                }
+            }
+        });
+    </script>
+  
+</body>
+</html>

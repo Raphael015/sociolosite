@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Desigualdade - Conclusão</title>
+  <link rel="stylesheet" type="text/css" href="CSS/conclusaoface.css" media="screen"/>
+  <style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url("IMG/image.png");
+        background-size: auto;
+        background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>CONCLUSÃO</h1>
+      <br><br>
+      <button id="backButao" onclick="goBack()">Voltar</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="janelaTexto">
+        <p>
+            Portanto, é inegável que o acesso à internet desempenha um papel crucial na promoção da igualdade de oportunidades em todo o mundo. A internet não é apenas uma fonte abundante de informações ao alcance de um clique, mas também uma plataforma que capacita as pessoas a se conectarem, aprenderem e inovarem. O acesso à internet é um fator determinante na qualidade da educação, pois permite o acesso a recursos educacionais globalmente relevantes.
+            Abordar essas disparidades é um desafio global de extrema importância. Requer não apenas o compromisso de governos, empresas e universidades, como também uma colaboração coordenada entre as partes interessadas. A universalização do acesso à internet não é apenas uma meta desejável, mas uma necessidade urgente para garantir que todas as crianças e jovens tenham igualdade de oportunidades em um mundo digital cada vez mais interconectado.
+        </p>
+      </div>
+  </main>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p id="letras"> Direitos do site reservados aos alunos da turma de 2°Novotech
+                <br>
+                Gustavo Sabatini (N12); Isabela Nunes(N14); Raphael Melo(N33); Wesley Leal(N39); William Gulias(N40);
+              </p>
+            </div>
+          </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function isMobileDevice() {
+                return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+            }
+        
+            if (isMobileDevice()) {
+                var MyFooter = document.querySelector('.footer');
+                if (MyFooter) {
+                    MyFooter.style.width = '106vw';
+                    MyFooter.style.height = '105px';
+                    MyFooter.style.fontSize = '24px';
+                }
+                
+                var button = document.getElementById('backButao');
+                if (button) {
+                    button.style.marginTop = '20px';
+                    button.style.marginLeft = '10px';  
+                }
+                
+                var MyP = document.getElementById('letras');
+                if (MyP) {
+                    MyP.style.marginTop = '-8px';
+                    MyP.style.marginLeft = '24px';   
+                }
+                
+                var janela = document.querySelector('.janelaTexto');
+                if (janela) {
+                    janela.style.width = '700px';
+                    janela.style.height = '700px';
+                    janela.style.marginTop = '150px';
+                }
+            }
+        });
+    </script>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
